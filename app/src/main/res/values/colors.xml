@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00041a</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000c2e</color>
+    <color name="colorPrimaryLight">#242630</color>
+    <color name="colorPrimaryLightDark">#636363</color>
+    <color name="colorAccentLight">#C9C9C9</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="input_color_basic">#c1c1c1</color>
+    <color name ="input_color_content">#F0F0F0</color>
+    <color name="error">#e53935</color>
+    <color name="mavi">#1a237e</color>
+    <color name="bg_koyu_mavi">#001028</color>
+    <color name="bg_acik_mavi">#07a5a9</color>
+    <color name="bronz">#b44001</color>
+    <color name="gümüş">#4a6263</color>
+    <color name="altın">#ffff00</color>
+    <color name="platin">#00ff6a</color>
+    <color name="entry_grey">#4d4d4d</color>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_toEndOf="@id/image_entry"
+    android:background="@drawable/drawable_entry_arkaplan_new">
+
+    <ImageView
+        android:id="@+id/image_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/nav_header_desc"
+        android:maxWidth="130dp"
+        android:maxHeight="130dp"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/ic_dialog_alert" />
+
+    <TextView
+        android:id="@+id/text_entry_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@id/button_entry_ayar"
+        android:layout_toEndOf="@id/image_entry"
+        android:fontFamily="@font/quicksandmedium"
+        android:padding="3dp"
+        android:text="@string/error_hatali_veri"
+        android:textColor="@color/entry_grey"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_taglar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_entry_name"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@id/button_entry_ayar"
+        android:layout_toEndOf="@id/image_entry"
+        android:background="@drawable/drawable_tag_arkaplan"
+        android:fontFamily="@font/quicksandmedium"
+        android:padding="3dp"
+        android:text="@string/error_hatali_veri"
+        android:textColor="@color/entry_grey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_ambar_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_taglar"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toStartOf="@id/button_entry_ayar"
+        android:layout_toEndOf="@id/image_entry"
+        android:background="@drawable/drawable_content_arkaplan"
+        android:fontFamily="@font/quicksandmedium"
+        android:padding="3dp"
+        android:text="@string/error_hatali_veri"
+        android:textColor="@color/input_color_content"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_ambar_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@id/button_entry_ayar"
+        android:layout_toEndOf="@id/image_entry"
+        android:fontFamily="@font/quicksandmedium"
+        android:gravity="bottom"
+        android:padding="3dp"
+        android:text="@string/error_hatali_veri"
+        android:textColor="@color/entry_grey" />
+
+    <Button
+        android:id="@+id/button_entry_ayar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/ic_settings"
+        android:backgroundTint="@color/entry_grey" />
+
+    <Button
+        android:id="@+id/button_entry_git"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/ic_goto"
+        android:backgroundTint="@color/entry_grey"
+        android:padding="15dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_entry_kopyala"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/ic_copy"
+        android:backgroundTint="@color/entry_grey"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_entry_indir"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/ic_fullscreen_image"
+        android:backgroundTint="@color/entry_grey"
+        android:visibility="invisible" />
+</RelativeLayout>

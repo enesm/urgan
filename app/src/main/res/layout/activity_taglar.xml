@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <ListView
+        android:id="@+id/list_taglar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="70dp"
+        android:clipToPadding="false"
+        android:divider="@android:drawable/divider_horizontal_bright"
+        android:dividerHeight="2dp"
+        android:background="#FFFFFF">
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/button_taglar_ekle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/nav_header_desc"
+        android:src="@android:drawable/ic_input_add"
+        android:background="@drawable/button_style"/>
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/quicksandregular"
+        android:text="@string/tag_empty"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+</RelativeLayout>

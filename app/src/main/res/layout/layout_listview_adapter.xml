@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_entry_arkaplan"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/nav_header_desc"
+        android:padding="15dp"
+        android:src="@android:drawable/ic_dialog_alert"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_entry_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksandmedium"
+            android:maxEms="8"
+            android:padding="3dp"
+            android:text="@string/error_hatali_veri"
+            android:textColor="@color/entry_grey"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_taglar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_tag_arkaplan"
+            android:fontFamily="@font/quicksandmedium"
+            android:maxEms="10"
+            android:padding="3dp"
+            android:text="@string/error_hatali_veri"
+            android:textColor="@color/entry_grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksandmedium"
+            android:gravity="bottom"
+            android:maxEms="10"
+            android:padding="3dp"
+            android:text="@string/error_hatali_veri"
+            android:textColor="@color/entry_grey" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:minWidth="30dp"
+        android:minHeight="60dp">
+
+        <Button
+            android:id="@+id/button_entry_ayar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_settings" />
+
+        <Button
+            android:id="@+id/button_entry_git"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_goto"
+            android:gravity="center"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button_entry_kopyala"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_copy"
+            android:gravity="center"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button_entry_indir"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_download"
+            android:gravity="center"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>
